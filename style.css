@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+@font-face{
+  font-family: 'Karla';
+  src:local('Karla-Regular'), 
+      local('Karla-Regular'),
+      url(./Karla-Regular.ttf)
+  
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Karla', sans-serif;
+}
+
+.subscription-wrapper{
+  width: 100%;
+  height: 120vh;
+  background: #e6eff6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-card{
+  width: 80%;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem 0.4rem rgb(152, 166, 189, 0.3);
+}
+
+.top{
+  padding: 1.4rem;
+  height: 20rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background: #fff;
+}
+
+.green-header{
+  color: #2bb3b1;
+  margin-bottom: 1rem;
+}
+
+.lemon-header{
+  color:#cfea41 ;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.text p{
+  font-size: 1.4rem;
+  color:#b0b4bf;
+}
+.bottom{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left, .right{
+  width: 100%;
+  height: 23.2rem;
+  padding: 1.4rem;
+  padding: 3.2rem 1.4rem;
+  color: #fff;
+}
+
+.left{
+  left:0;
+  background: #2bb3b1;
+}
+
+.header-left{
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.price{
+  display: flex;
+  align-items: center;
+}
+
+.left .price{
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.price span{
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  opacity: 0.4;
+}
+
+.left p{
+  text-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0,0.4);
+  padding-bottom: 3rem;
+}
+
+.signup-btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.signup-btn button{
+  border: none;
+  width: 100%;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0,0.2);
+  border-radius: 0.5rem;
+  margin: auto;
+  color: #fff;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: 'Karla', sans-serif;
+  background-color: #bfdf33;
+}
+
+.right{
+  right: 0;
+  background: #2bb3b1;
+  opacity: 0.8;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.header-right{
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.right li{
+  opacity: 0.6;
+}
+
+
+
+@media(min-width:767px){
+  html{
+    font-size: 70%;
+  }
+
+  .subscription-wrapper{
+    height: 100vh;
+  }
+
+  .bottom{
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .left{
+    border-radius: 0 0 0 0.5rem;
+  }
+
+  .signup-btn button{
+    width: 80%;
+  }
+
+  .right{
+    border-radius: 0 0 0.5rem 0;
+  }
+}
+
+@media(min-width: 1000px){
+  html{
+    font-size: 75%;
+  }
+
+  .signup-btn button{
+    cursor: pointer;
+  }
+
+  .subscription-card{
+    width: 60%;
+  }
+}

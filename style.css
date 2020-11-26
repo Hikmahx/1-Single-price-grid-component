@@ -8,14 +8,6 @@
 
 }
 
-@font-face{
-  font-family: 'Karla';
-  src:local('Karla-Regular'), 
-      local('Karla-Regular'),
-      url(./Karla-Regular.ttf)
-  
-}
-
 html{
   font-size: 62.5%;
   font-family: 'Karla', sans-serif;

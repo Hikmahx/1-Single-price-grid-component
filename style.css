@@ -15,7 +15,7 @@ html{
 
 .subscription-wrapper{
   width: 100%;
-  height: 120vh;
+  height: 130vh;
   background: #e6eff6;
   display: flex;
   justify-content: center;
@@ -24,15 +24,16 @@ html{
 
 .subscription-card{
   width: 80%;
+  max-width: 45rem;
   font-size: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   box-shadow: 0 0.5rem 1rem 0.4rem rgb(152, 166, 189, 0.3);
 }
 
 .top{
   padding: 1.4rem;
   height: 20rem;
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 0.8rem 0.8rem 0 0;
   background: #fff;
 }
 
@@ -106,7 +107,7 @@ html{
 .signup-btn button{
   border: none;
   width: 100%;
-  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0,0.2);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0,0.3);
   border-radius: 0.5rem;
   margin: auto;
   color: #fff;
@@ -120,7 +121,7 @@ html{
   right: 0;
   background: #2bb3b1;
   opacity: 0.8;
-  border-radius: 0 0 0.5rem 0.5rem;
+  border-radius: 0 0 0.8rem 0.8rem;
 }
 
 .header-right{
@@ -137,21 +138,33 @@ html{
 
 @media(min-width:767px){
   html{
-    font-size: 70%;
+    /* font-size: 70%; */
   }
 
   .subscription-wrapper{
     height: 100vh;
   }
 
+  .subscription-card{
+    max-width: 58rem;
+  }
+
+  .top{
+    padding: 3rem;
+  }
   .bottom{
     display:flex;
     flex-wrap: nowrap;
     align-items: center;
   }
 
+  .left, .right{
+    padding: 3rem;
+    padding: 3.2rem 3rem;
+  }
+
   .left{
-    border-radius: 0 0 0 0.5rem;
+    border-radius: 0 0 0 0.8rem;
   }
 
   .signup-btn button{
@@ -159,20 +172,16 @@ html{
   }
 
   .right{
-    border-radius: 0 0 0.5rem 0;
+    border-radius: 0 0 0.8rem 0;
+  }
+
+  .text p{
+    width: 95%;
   }
 }
 
 @media(min-width: 1000px){
-  html{
-    font-size: 75%;
-  }
-
   .signup-btn button{
     cursor: pointer;
-  }
-
-  .subscription-card{
-    width: 60%;
   }
 }

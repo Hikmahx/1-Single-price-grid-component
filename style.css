@@ -159,18 +159,20 @@ html{
 
 
 
-@media(min-width:767px){
+@media(min-width:750px){
 
   .subscription-wrapper{
     height: 100vh;
   }
 
   .subscription-card{
-    max-width: 58rem;
+    /* max-width: 58rem; */
+    max-width: 64rem;
   }
 
   .top{
     padding: 3rem;
+    height: 20rem;
   }
   .bottom{
     display:flex;
@@ -181,6 +183,7 @@ html{
   .left, .right{
     padding: 3rem;
     padding: 3.2rem 3rem;
+    height: 26rem;
   }
 
   .left{
@@ -196,7 +199,15 @@ html{
   }
 
   .text p{
-    width: 95%;
+    /* width: 95%; */
+    width: 84%;
+    max-width: 45rem;
+  }
+}
+
+@media (min-height: 805px){
+  .subscription-wrapper{
+    height: 100vh;
   }
 }
 

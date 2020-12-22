@@ -1,1 +1,268 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* MOBILE VIEW */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Karla', sans-serif;
+}
+
+.subscription-wrapper {
+  width: 100%;
+  background: #e6eff6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7.2rem 0rem 5.8rem;
+}
+
+.subscription-card {
+  width: 83%;
+  max-width: 45rem;
+  font-size: 1.6rem;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 0rem 1.5rem 3rem 1rem #cfdfee;
+          box-shadow: 0rem 1.5rem 3rem 1rem #cfdfee;
+}
+
+.top {
+  border-radius: 0.8rem 0.8rem 0 0;
+  background: #fff;
+  padding: 2.8rem 2.5rem;
+  height: 26.8rem;
+  font-size: 1.6rem;
+}
+
+.green-header {
+  color: #2bb3b1;
+  font-size: 1.3rem;
+  margin-bottom: 2.2rem;
+  letter-spacing: 0.05rem;
+}
+
+.lemon-header {
+  color: #cfea41;
+  font-size: 1.5rem;
+  margin-bottom: 1.8rem;
+  line-height: 2rem;
+}
+
+.text p {
+  font-size: 1.36rem;
+  color: #b0b4bf;
+  line-height: 2.6rem;
+}
+
+.bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.left, .right {
+  width: 100%;
+  padding: 2.5rem;
+  color: #fff;
+}
+
+.left {
+  left: 0;
+  background: #2bb3b1;
+}
+
+.header-left {
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.05rem;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left .price {
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.price span {
+  font-size: 1.6rem;
+  margin-left: 1.2rem;
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+.left p {
+  padding-bottom: 3rem;
+  opacity: 0.8;
+  font-size: 1.56rem;
+}
+
+.signup-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup-btn button {
+  border: none;
+  width: 100%;
+  -webkit-box-shadow: 0 1rem 1rem 0rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 1rem 0rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin: auto;
+  color: #fff;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-family: 'Karla', sans-serif;
+  background-color: #bfdf33;
+  height: 4.8rem;
+}
+
+.right {
+  right: 0;
+  background: #2bb3b1;
+  opacity: 0.8;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.header-right {
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.right li {
+  opacity: 0.6;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.03rem;
+}
+
+/* TABLET AND DESKTOP VIEW */
+@media (min-width: 750px) {
+  .subscription-wrapper {
+    height: 100vh;
+  }
+  .subscription-card {
+    max-width: 64rem;
+  }
+  .top {
+    padding: 3rem;
+    height: 20rem;
+  }
+  .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .left, .right {
+    padding: 3rem;
+    padding: 3.2rem 3rem;
+    height: 26rem;
+  }
+  .left {
+    border-radius: 0 0 0 0.8rem;
+  }
+  .signup-btn button {
+    width: 80%;
+  }
+  .right {
+    border-radius: 0 0 0.8rem 0;
+  }
+  .text p {
+    width: 84%;
+    max-width: 45rem;
+  }
+}
+
+@media (min-height: 805px) {
+  .subscription-wrapper {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .signup-btn button {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscription-wrapper {
+    padding: 0rem;
+  }
+  .subscription-card {
+    height: 53.4rem;
+  }
+  .top {
+    height: 45%;
+    padding: 5rem 4rem;
+  }
+  .green-header, .text p {
+    font-size: 1.6rem;
+  }
+  .green-header {
+    margin-bottom: 2.5rem;
+  }
+  .lemon-header {
+    font-size: 1.8rem;
+  }
+  .text p {
+    width: 100%;
+    max-width: 54rem;
+  }
+  .bottom {
+    height: 55%;
+  }
+  .left, .right {
+    height: 100%;
+    padding: 5.2rem 4rem 2rem;
+  }
+  .left .header-left {
+    margin-bottom: 2rem;
+  }
+  .left p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .left .signup-btn button {
+    width: 100%;
+    height: 5.5rem;
+  }
+  .right li {
+    line-height: 2.28rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

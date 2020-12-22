@@ -28,7 +28,7 @@ html{
   max-width: 45rem;
   font-size: 1.6rem;
   border-radius: 0.8rem;
-  box-shadow: -0.8rem 0.5rem 2rem 1rem rgb(152, 166, 189, 0.1);
+  box-shadow: 0rem 1.5rem 3rem 1rem rgb(207 223 238);
 }
 
 .top{
@@ -150,8 +150,8 @@ html{
 }
 
 .right li{
-  /* opacity: 0.6; */
-  color: #e5eff5;
+  opacity: 0.6;
+  /* color: #e5eff5; */
   font-size: 1.3rem;
   line-height: 2rem;
   letter-spacing: 0.03rem;
@@ -214,5 +214,68 @@ html{
 @media(min-width: 1000px){
   .signup-btn button{
     cursor: pointer;
+  }
+}
+
+@media (min-width: 1200px){
+  .subscription-wrapper{
+    padding: 0rem;
+  }
+
+  .subscription-card{
+    height: 53.4rem;
+  }
+
+  .top{
+    height: 45%;
+    padding: 5rem 4rem;
+  }
+
+  .green-header, .text p{
+    font-size: 1.6rem;
+  }
+
+  .green-header{
+    margin-bottom: 2.5rem;
+  }
+
+  .lemon-header{
+    font-size: 1.8rem;
+  }
+
+  .text p{
+    width: 100%;
+    max-width: 54rem;
+  }
+
+  .bottom{
+    height: 55%;
+  }
+
+  .left, .right{
+    height: 100%;
+    padding: 5.2rem 4rem 2rem;
+  }
+
+  .left{
+    /* padding: 5.5rem 4rem; */
+  }
+
+  .left .header-left{
+    margin-bottom: 2rem;
+  }
+
+  .left p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .left .signup-btn button{
+    width: 100%;
+    height: 5.5rem;
+  }
+
+  .right li{
+    line-height: 2.28rem;
   }
 }
